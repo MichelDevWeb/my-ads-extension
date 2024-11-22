@@ -1,0 +1,76 @@
+# Build and Distribution
+/dist
+/build
+/out
+
+# Dependencies
+/node_modules
+/vue/node_modules/
+package-lock.json
+yarn.lock
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+
+# IDE and Editor Files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Vue.js
+.vue-cache/
+*.vue.js
+*.vue.map
+
+# Chrome Extension
+*.crx
+*.pem
+*.zip
+
+# Debug Files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+/coverage
+/test/unit/coverage/
+/test/e2e/reports/
+selenium-debug.log
+
+# Temporary Files
+*.log
+*.tmp
+*.temp
+.cache
+.temp
+
+# Local Configuration
+config.local.js
+config.dev.js
+
+# Sensitive Information
+client_secret.json
+oauth2.keys.json
+developer-token.json
+
+# Optional: Project Specific
+/public/dev
+/docs 

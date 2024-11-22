@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google Account Manager</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background: #f5f5f5;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      select,
+      button {
+        padding: 10px;
+        margin: 10px 0;
+        width: 100%;
+        max-width: 300px;
+      }
+
+      button {
+        background: #4285f4;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #357abd;
+      }
+
+      .user-card {
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+      }
+
+      .profile-img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 15px;
+      }
+
+      .ads-account-item {
+        background: white;
+        padding: 15px;
+        margin: 10px 0;
+        border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .status {
+        padding: 10px;
+        border-radius: 4px;
+        margin: 10px 0;
+        display: none;
+      }
+
+      .status.error {
+        background: #f8d7da;
+        color: #721c24;
+      }
+      .status.success {
+        background: #d4edda;
+        color: #155724;
+      }
+      .status.warning {
+        background: #fff3cd;
+        color: #856404;
+      }
+      .status.info {
+        background: #d1ecf1;
+        color: #0c5460;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Google Account Manager</h1>
+      <button id="loginButton">Get Google Accounts</button>
+      <select id="accountSelect" style="display: none">
+        <option value="">Select an account</option>
+      </select>
+      <div id="userInfo"></div>
+      <div id="adsAccounts"></div>
+      <div id="status"></div>
+    </div>
+    <script src="page.js"></script>
+  </body>
+</html>

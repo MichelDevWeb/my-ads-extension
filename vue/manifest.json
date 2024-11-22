@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "Google Accounts Manager",
+  "version": "1.0",
+  "description": "Manage Google Accounts and Ads",
+  "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAsTc3GEkhUgOqTBe9ZQcBff6275KmJ2yC5RqLr1pE51ux/P5QknA9DBWirdnwDhRmDdJWJdBuefT9ok7hmesRkZL/s2QWG7Sat86I3xO7TbINwqC7UQqpkcO+HbDQSZ3c3+6eLDa87lYEUbrJXBEun8Sxu/9pZeTbimQC3QHu9biHvUcBq8S2qbYk65mnTSD+C+9bqQn5M60040dZWHTTKwJt+kzDMsHQ1DVbA7X9/vKt5UQIbvkshl4D/MJ6piy3v4Qs7Huvnnrjrj6SI3xEv4lAIe81/opiaR8Cnnw0eIiCrOijAHInqKB/KoiTybzHAuflX39QmowYyFSQE2oElwIDAQAB",
+  "permissions": ["identity", "identity.email", "storage"],
+  "host_permissions": [
+    "https://googleads.googleapis.com/*",
+    "https://www.googleapis.com/*"
+  ],
+  "action": {
+    "default_title": "Google Accounts Manager"
+  },
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "oauth2": {
+    "client_id": "433583771675-s8q43doerjb2ats95iskgcpe9tqjtmb4.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/userinfo.email",
+      "https://www.googleapis.com/auth/userinfo.profile",
+      "https://www.googleapis.com/auth/adwords"
+    ]
+  }
+}
